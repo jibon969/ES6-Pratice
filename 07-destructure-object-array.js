@@ -1,0 +1,11 @@
+// Destructure object, array, complex object
+
+const person = {name:"Jibon", age:20, gfName:"Atiya"}
+console.log(person)
+
+const gfName = person.gfName
+console.log(gfName)
+
+// Access property
+const {name, age} = person
+console.log(name, age)
