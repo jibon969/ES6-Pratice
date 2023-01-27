@@ -16,3 +16,15 @@ const friends = ["Shampa", "Payel", "Jibon", "Atiya"]
 const [chotoFriend, nextFriend, ...restFriend] = friends;
 console.log(chotoFriend, nextFriend)
 console.log(restFriend)
+// Complex Object
+
+const complexObject = {
+    name:"Jibon Ahmed",
+    info:{
+        address:"kolabagan",
+        leader:"Tiger"
+    }
+}
+
+const {leader} = complexObject.info;
+console.log(leader)
