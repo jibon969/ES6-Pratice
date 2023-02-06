@@ -1,8 +1,6 @@
-
 // object-method-property
-
 const normalPerson = {
-    firstName :"Jibon",
+    firstName : "Jibon",
     lastName : "Ahmed",
     salary: 50000,
     getFullName: function(){
@@ -16,6 +14,5 @@ const normalPerson = {
 }
 
 console.log(normalPerson.getFullName())
-
 normalPerson.chargeSalary(10000)
 console.log(normalPerson.salary)
