@@ -6,9 +6,12 @@ document.getElementById("btn-add-name").addEventListener('click', function(){
 })
 
 document.getElementById("btn-remove-name").addEventListener("click", function(){
+    // Remove localStorage
     localStorage.removeItem("name");
 })
 
 document.getElementById("btn-clear-ls").addEventListener("click", function(){
+    // Clear localStorage
     localStorage.clear()
 })
+

@@ -1,4 +1,3 @@
-
 const getInputValueById = id =>{
     const inputField = document.getElementById(id);
     const inputValue = inputField.value;
@@ -9,3 +8,4 @@ const addProduct = () =>{
     const product = getInputValueById("product-name-field")
     console.log(product)
 }
+
