@@ -1,6 +1,5 @@
 
 // setInterval and clearInterval with x++ and ++x
-
 console.log("first");
 console.log("second");
 console.log("third");
