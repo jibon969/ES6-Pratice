@@ -1,5 +1,4 @@
 
-
 const getInputValueById = (id) =>{
     const inputField = document.getElementById(id);
     const inputValue = inputField.value;
@@ -22,5 +21,4 @@ const displayProducts = (product, quantity) => {
     const li = document.createElement("li");
     li.innerText = `${product} : ${quantity}`
     productContainer.appendChild(li)
-
 }
