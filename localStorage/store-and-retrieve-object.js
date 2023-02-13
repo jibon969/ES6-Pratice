@@ -9,11 +9,12 @@ const getInputValueById = (id) =>{
 const addProduct = () =>{
     const product = getInputValueById("product-name-field");
     const quantity = getInputValueById("product-quantity-field");
-    localStorage.setItem(product, quantity)
-    // console.log(product, quantity)
-
     // Display data show UI
-    displayProducts(product, quantity)
+    addProductToDisplay(product, quantity)
+
+    // set to local storage
+    // simple way
+    localStorage.setItem(product, quantity)
 }
 
 const getShoppingCartFromLocalStorage = () =>{
@@ -27,14 +28,29 @@ const getShoppingCartFromLocalStorage = () =>{
 
 const saveItemToLocalStorage = (product, quantity) =>{
     const cart = getShoppingCartFromLocalStorage();
+    
+    // add product to the object as property
     cart[product] = quantity;
     const cartStringify = JSON.stringify(cart);
+
+    // save to local storage
     localStorage.setItem('cart', cartStringify)
 }
 
-const displayProducts = (product, quantity) => {
+const addProductToDisplay = (product, quantity) => {
     const productContainer = document.getElementById("product-container");
     const li = document.createElement("li");
     li.innerText = `${product} : ${quantity}`
-    productContainer.appendChild(li)
+    productContainer.appendChild(li);
 }
+
+
+const displayStoredProduct = () =>{
+    const cart = getShoppingCartFromLocalStorage();
+    for (const product in cart){
+        const quantity = cart[product]
+        addProductToDisplay(product, quantity)
+    }
+}
+
+displayStoredProduct()
