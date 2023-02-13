@@ -17,7 +17,7 @@ const addProduct = () =>{
 }
 
 const getShoppingCartFromLocalStorage = () =>{
-    let savedCart = localStorage.getItem("cart");
+    // let savedCart = localStorage.getItem("cart");
 }
 
 const displayProducts = (product, quantity) => {
