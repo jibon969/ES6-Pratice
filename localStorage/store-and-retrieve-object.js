@@ -14,7 +14,9 @@ const addProduct = () =>{
 
     // set to local storage
     // simple way
-    localStorage.setItem(product, quantity)
+    // localStorage.setItem(product, quantity)
+
+    saveItemToLocalStorage(product, quantity)
 }
 
 const getShoppingCartFromLocalStorage = () =>{
@@ -31,10 +33,10 @@ const saveItemToLocalStorage = (product, quantity) =>{
     
     // add product to the object as property
     cart[product] = quantity;
-    const cartStringify = JSON.stringify(cart);
+    const cartStringifyField = JSON.stringify(cart);
 
     // save to local storage
-    localStorage.setItem('cart', cartStringify)
+    localStorage.setItem('cart', cartStringifyField)
 }
 
 const addProductToDisplay = (product, quantity) => {
