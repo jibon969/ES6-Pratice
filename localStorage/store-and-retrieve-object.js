@@ -13,9 +13,9 @@ const addProduct = () =>{
     addProductToDisplay(product, quantity)
 
     // set to local storage
+    
     // simple way
     // localStorage.setItem(product, quantity)
-
     saveItemToLocalStorage(product, quantity)
 }
 
@@ -45,7 +45,6 @@ const addProductToDisplay = (product, quantity) => {
     li.innerText = `${product} : ${quantity}`
     productContainer.appendChild(li);
 }
-
 
 const displayStoredProduct = () =>{
     const cart = getShoppingCartFromLocalStorage();
