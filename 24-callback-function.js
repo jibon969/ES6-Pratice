@@ -18,3 +18,21 @@ console.log(result4)
 
 const result5 = false
 console.log(result5)
+console.log("\n")
+
+// Example 2
+
+function greeting (greetingHandler, name){
+    greetingHandler(name)
+}
+
+function greetingHandler(name){
+    console.log("Good Morning", name)
+}
+
+function greetEvening(name){
+    console.log("Good Evening", name)
+}
+
+greeting(greetingHandler, "Jibon Ahmed")
+greeting(greetEvening, "Mr. Ahmed")
