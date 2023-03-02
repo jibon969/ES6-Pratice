@@ -1,14 +1,27 @@
 // async await explained
-async function hello(){
-    return "Hello"
+
+ function learnCoding() {
+    x
+    console.log("I learn Js today !")
+    
 }
 
-console.log(hello())
-
-
-// Normal Function
-function hello(){
-    return "Hello"
+function toDo(){
+    const task = "How async await Work !";
+    return task
 }
 
-console.log(hello())
+const result = toDo()
+console.log(result)
+
+async function coding(){
+    try{
+        await learnCoding();
+        await toDo();
+    }
+    catch(err){
+        console.log("Hi Error :", err)
+    }
+
+}
+coding()
