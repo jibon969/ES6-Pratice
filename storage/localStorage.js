@@ -10,9 +10,21 @@ const addToLocalStorage = () =>{
     const value = inputValue.value;
 
     // LocalStorage setValue
-    localStorage.setItem(id, value);
+    if (id && value){
+        localStorage.setItem(id, value);
+    }
 
     // Clear input value
     inputId.value = '';
     inputValue.value = '';
 }
+
+// Object set from localStorage
+const pen = {price:20, color:"red"}
+const penObj = JSON.stringify(pen)
+localStorage.setItem(pen, penObj)
+
+// Object get from localStorage
+const getPen = localStorage.getItem(pen)
+console.log(getPen)
+
