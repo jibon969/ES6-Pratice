@@ -28,3 +28,8 @@ localStorage.setItem(pen, penObj)
 const getPen = localStorage.getItem(pen)
 console.log(getPen)
 
+
+// Array set from localStorage
+const friends = [12, 34, 20, 40]
+const friendsObj = JSON.stringify(friends)
+localStorage.setItem('friends', friendsObj)
