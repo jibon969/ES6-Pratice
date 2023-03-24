@@ -2,11 +2,10 @@
 console.log("First !")
 console.log("Second !")
 
-const second = 0;
+let second = 0;
 const intervalId = setInterval(()=>{
     console.log(second++)
-    if (second == 10){
+    if (second === 10){
         clearInterval(intervalId)
-    } 
-
+    }
 }, 1500)
