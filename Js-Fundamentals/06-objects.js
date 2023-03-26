@@ -6,3 +6,10 @@ const personalInfo = {
     friends:['Shampa', "payel", "atiya"]
 }
 console.log(personalInfo)
+
+const myVariable = 'age'
+
+// 
+console.log(personalInfo.age)           // direct by property
+console.log(personalInfo['age'])        // direct by property
+console.log(personalInfo[myVariable])   // access via property name in a variable
